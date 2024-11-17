@@ -3,13 +3,13 @@ try:
 except Exception as e:
     print(e)
     exit()
-import picamera2
+# import picamera2
 import pygame
 import time
 import cv2
 import PIL
 
-from picamera2 import Picamera2
+
 from libcamera import Transform
 from io import BytesIO
 from PIL import Image
@@ -20,7 +20,7 @@ from pibooth.language import get_translated_text
 
 
 # Release version
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 @pibooth.hookimpl 
 def pibooth_configure(cfg):
@@ -48,8 +48,11 @@ def pibooth_setup_camera(cfg):
 
 
 def get_rpi_picamera2_proxy():
-    
-    cam = Picamera2()
+    try:
+        from picamera2 import Picamera2
+        cam = Picamera2()
+    except Exception as e:
+        cam = None 
     if cam:
         LOGGER.info('Use Picamera2 library')
         return cam
