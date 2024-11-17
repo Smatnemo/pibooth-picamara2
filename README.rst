@@ -20,12 +20,13 @@ Software
 
 Install
 -------
+Install picamera2 library
 ::
      $ sudo apt update && sudo apt upgrade
      $ sudo apt install python3-picamera2
 
+Install pibooth-picamera2 plugin
 ::
-
      $ pip3 install pibooth-picamera2 
 
 .. _`pibooth`: https://pypi.org/project/pibooth 
