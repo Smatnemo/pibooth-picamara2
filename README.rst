@@ -21,8 +21,8 @@ Software
 Install
 -------
 ::
-
-     $ apt install picamera2
+     $ sudo apt update && sudo apt upgrade
+     $ sudo apt install python3-picamera2
 
 ::
 
