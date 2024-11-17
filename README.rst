@@ -34,7 +34,7 @@ Install
    :target: https://www.python.org/downloads 
    :alt: Python 3.9+
 
-.. |Downloads| image:: https://img.shields.io/pypi/dm/pibooth?color=purple
+.. |Downloads| image:: https://img.shields.io/pypi/dm/pibooth-picamera2
    :target: https://pypi.org/project/pibooth-picamera2
    :alt: PyPi downloads
 
